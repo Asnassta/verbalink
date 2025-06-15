@@ -1088,7 +1088,7 @@
     .plan .tabs-nav a {
       min-width: auto;
       flex: 1 1 auto;
-      padding: 2px 24px; }
+      padding: 2px 7px; }
   .plan__save {
     margin-right: 24px;
     margin-left: auto; }
@@ -1117,7 +1117,11 @@
 
 @media (max-width: 400px) {
   .plan__save {
-    margin-right: 0; } }
+    margin-right: 16px; } }
+
+@media (max-width: 360px) {
+  .plan__save {
+    margin-right: 0px; } }
 
 /*==========/adaptive===========*/
 /*=========Reset==========*/
