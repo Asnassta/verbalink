@@ -1,0 +1,30 @@
+<svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_32942)">
+<g clip-path="url(#clip1_35_32942)">
+<mask id="mask0_35_32942" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="0" width="50" height="36">
+<path d="M44.5883 0H3.4118C1.24598 0 -0.509766 1.69661 -0.509766 3.78947V32.2105C-0.509766 34.3034 1.24598 36 3.4118 36H44.5883C46.7541 36 48.5098 34.3034 48.5098 32.2105V3.78947C48.5098 1.69661 46.7541 0 44.5883 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_35_32942)">
+<mask id="mask1_35_32942" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="0" width="50" height="36">
+<path d="M-0.509766 0H48.5112V35.9992H-0.509766V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_35_32942)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.509766 28.6732V7.34082L15.7109 18.007L-0.509766 28.6732Z" fill="#000001"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5537 36.0068L28.7633 24.0117H54.6273V35.9997H10.5537V36.0068Z" fill="#000C8A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.3916 -9.88594e-05H54.6285V12.009H28.7573C28.7573 12.009 9.62856 -0.119627 9.3916 -9.88594e-05Z" fill="#E1392D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.510399 4.5V7.34056L15.7103 17.9997L-0.517578 28.6729V31.5065L19.9108 18.0067L-0.510399 4.5Z" fill="#FFB915"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.509766 4.49991V0H6.31167L27.9392 14.3434H54.6361V21.6698H27.9392L6.30449 35.9992H-0.509766V31.5063L19.9114 18.0066L-0.502585 4.49991H-0.509766Z" fill="#007847"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.30273 0H10.5536L28.7632 12.0021H54.6272V14.3434H27.9374L6.30273 0ZM6.30273 36.0062H10.5536L28.7632 24.0112H54.6272V21.6769H27.9374L6.30273 35.9992V36.0062Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_35_32942">
+<rect width="48" height="36" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip1_35_32942">
+<rect width="50" height="36" fill="white" transform="translate(-1)"/>
+</clipPath>
+</defs>
+</svg>
