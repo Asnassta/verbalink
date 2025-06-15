@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta content="telephone=no" name="format-detection"/>
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Languages</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="globe-icon" viewBox="0 0 24 24">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5192 2 22 6.48083 22 12C22 17.5192 17.5192 22 12 22C6.48083 22 2 17.5192 2 12C2 6.48083 6.48083 2 12 2ZM14.1308 15.3333H9.86833C10.3233 17.3833 11.0692 18.7617 12 20.12C12.995 18.6692 13.7008 17.2783 14.1308 15.3333ZM8.16667 15.3333H4.36083C5.39083 17.6875 7.4475 19.4767 9.99 20.0967C9.11667 18.6525 8.50417 17.0483 8.16667 15.3333ZM19.6392 15.3333H15.8333C15.5075 16.99 14.9208 18.5725 14.0208 20.0783C16.5308 19.4425 18.6183 17.6658 19.6392 15.3333ZM7.96833 10.3333H3.83333C3.61083 11.4275 3.61083 12.5708 3.83333 13.6667H7.92917C7.83 12.5592 7.845 11.44 7.96833 10.3333ZM14.3525 10.3333H9.64667C9.50917 11.4383 9.4925 12.56 9.6025 13.6667H14.3967C14.5075 12.56 14.4892 11.4392 14.3525 10.3333ZM20.1667 10.3333H16.0308C16.1542 11.44 16.1692 12.5592 16.0708 13.6667H20.1667C20.3833 12.5958 20.3942 11.46 20.1667 10.3333ZM10.0367 3.8925C7.4725 4.5025 5.3975 6.2975 4.36083 8.66667H8.23833C8.60083 6.965 9.22 5.34583 10.0367 3.8925ZM11.9992 3.8525C11.0917 5.3275 10.4075 6.73 9.94667 8.66667H14.0525C13.6075 6.795 12.9383 5.37667 11.9992 3.8525ZM13.9725 3.91C14.8167 5.42 15.4167 7.04333 15.7608 8.66667H19.6392C18.6125 6.32 16.5042 4.535 13.9725 3.91Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper wrapper_gray">
+		<header class="header header_bg">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<nav class="header__nav">
+						<div class="header__col">
+							<div class="header__link header__link_drop">
+								<span>Services</span>
+								<div class="header__menu menu">
+									<div class="menu__wrapper">
+										<div class="menu__inner">
+											<a href="voice-to-text.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/voice-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Voice-to-Text</div>
+													<div class="menu__description">Speak directly, and we’ll instantly convert your voice into written text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="summaries.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/drop-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Summaries</div>
+													<div class="menu__description">Drop an audio or video file, and we’ll turn it into accurate text in no time</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="subtitles.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/video-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Subtitles</div>
+													<div class="menu__description">Paste a video link, and we’ll instantly convert its audio into text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="api.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/setting-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">API</div>
+													<div class="menu__description">Effortlessly connect Verbalink with your favorite tools and platforms.</div>
+												</div>
+											</a><!--/menu__item-->
+										</div>
+									</div>
+								</div><!--/menu-->
+							</div>
+							<a href="#" class="header__link">
+								<span>Pricing</span>
+							</a>
+							<a href="#" class="header__link">
+								<span>Blog</span>
+							</a>
+						</div>
+						<div class="header__col">
+							<div class="header__lang lang">
+								<div class="lang__select">
+									<svg>
+										<use xlink:href="#globe-icon"></use>
+									</svg>
+									<span>English</span>
+								</div>
+								<div class="lang__dropdown">
+									<div class="lang__inner">
+										<div class="lang__option selected">
+											<div class="lang__icon">
+												<img src="assets/images/en-icon.svg" alt="">
+											</div>
+											<span class="lang__name">English</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/spain-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Spanish</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/brazil-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Portuguese</span>
+										</div><!--/lang__option-->
+									</div>
+								</div>
+							</div><!--/lang-->
+							<a href="#" class="header__sign">
+								<span>Sign in</span>
+							</a>
+							<a href="#" class="btn btn_wh">Try for free</a>
+						</div>
+					</nav>
+					<div class="header__burger burger">
+						<span class="burger__item"></span>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<section class="languages section">
+				<div class="container">
+					<h1 class="title-main">Supported Languages</h1>
+					<div class="subtitle">Below is the list of popular languages we support for transcription and subtitles.</div>
+					<form action="#" class="search">
+						<div class="search__input">
+							<input type="text" placeholder="Search language">
+						</div>
+						<button class="btn-green">Search</button>
+					</form><!--/search-->
+					<div class="languages__inner languages__inner_four">
+						<a href="#" class="languages__item">
+							<div class="languages__name">Afrikaans</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_14.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Albanian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_15.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Amharic</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_16.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Arabic</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_17.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_18.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Armenian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_19.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Azerbaijani</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_20.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Basque</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_21.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Belarusian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_22.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Bosnian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_23.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Bulgarian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_24.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Burmese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_25.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Cantonese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_26.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Catalan</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_27.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_28.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Croatian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_29.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Czech</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_30.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Danish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_31.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Dutch</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_32.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">English</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_1.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_2.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_3.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_4.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Estonian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_33.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Filipino</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_34.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Finnish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_35.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">French</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_7.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_8.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Galician</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_37.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Georgian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_38.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">German</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_5.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_6.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Greek</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_39.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Gujarati</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_40.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Hebrew</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_41.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Hindi</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_42.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Hungarian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_43.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Icelandic</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_44.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Indonesian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_45.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Italian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_46.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Japanese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_47.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Javanese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_48.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Khmer</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_49.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Korean</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_67.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Lao</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_68.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Latvian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_69.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Lithuanian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_70.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Macedonian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_71.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Malay</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_72.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Mandarin</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_73.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_74.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_75.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Mongolian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_76.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Nepali</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_77.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Norwegian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_78.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Persian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_79.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Polish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_80.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Portuguese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_81.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_82.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Romanian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_83.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Russian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_84.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Serbian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_85.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Sinhala</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_86.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Slovak</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_87.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Slovenian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_88.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Spanish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_9.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_10.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_11.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Sundanese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_12.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Swahili</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_50.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_52.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_53.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_54.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Swedish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_55.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Swiss German</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_56.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Tamil</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_57.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_58.svg" alt="">
+								</div>
+								<div class="languages__icon">
+									<img src="assets/images/country_59.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Telugu</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_60.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Thai</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_61.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Turkish</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_13.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Ukrainian</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_62.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Urdu</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_63.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Uzbek</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_64.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Vietnamese</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_65.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+						<a href="#" class="languages__item">
+							<div class="languages__name">Zulu</div>
+							<div class="languages__country">
+								<div class="languages__icon">
+									<img src="assets/images/country_66.svg" alt="">
+								</div>
+							</div>
+						</a><!--/languages__item-->
+					</div>
+				</div>
+			</section><!--/languages-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__col">
+						<a href="#" class="footer__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<div class="footer__description">Verbalink is a fast, accurate, and effortless AI-powered voice-to-text solution for seamless transcription</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Services</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">Voice-to-Text</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Summaries</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Subtitles</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">API Integrations</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Languages</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">English</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">German</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">French</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Spanish</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Indonesian</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Turkish</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Company</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">About us</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Terms of Service</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Help Center</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copyright">© 2025 Verbalink. All rights reserved</div>
+			</div>
+		</footer><!--/footer-->
+	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

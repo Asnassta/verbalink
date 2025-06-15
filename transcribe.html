@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta content="telephone=no" name="format-detection"/>
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Transcribe</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="globe-icon" viewBox="0 0 24 24">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5192 2 22 6.48083 22 12C22 17.5192 17.5192 22 12 22C6.48083 22 2 17.5192 2 12C2 6.48083 6.48083 2 12 2ZM14.1308 15.3333H9.86833C10.3233 17.3833 11.0692 18.7617 12 20.12C12.995 18.6692 13.7008 17.2783 14.1308 15.3333ZM8.16667 15.3333H4.36083C5.39083 17.6875 7.4475 19.4767 9.99 20.0967C9.11667 18.6525 8.50417 17.0483 8.16667 15.3333ZM19.6392 15.3333H15.8333C15.5075 16.99 14.9208 18.5725 14.0208 20.0783C16.5308 19.4425 18.6183 17.6658 19.6392 15.3333ZM7.96833 10.3333H3.83333C3.61083 11.4275 3.61083 12.5708 3.83333 13.6667H7.92917C7.83 12.5592 7.845 11.44 7.96833 10.3333ZM14.3525 10.3333H9.64667C9.50917 11.4383 9.4925 12.56 9.6025 13.6667H14.3967C14.5075 12.56 14.4892 11.4392 14.3525 10.3333ZM20.1667 10.3333H16.0308C16.1542 11.44 16.1692 12.5592 16.0708 13.6667H20.1667C20.3833 12.5958 20.3942 11.46 20.1667 10.3333ZM10.0367 3.8925C7.4725 4.5025 5.3975 6.2975 4.36083 8.66667H8.23833C8.60083 6.965 9.22 5.34583 10.0367 3.8925ZM11.9992 3.8525C11.0917 5.3275 10.4075 6.73 9.94667 8.66667H14.0525C13.6075 6.795 12.9383 5.37667 11.9992 3.8525ZM13.9725 3.91C14.8167 5.42 15.4167 7.04333 15.7608 8.66667H19.6392C18.6125 6.32 16.5042 4.535 13.9725 3.91Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<nav class="header__nav">
+						<div class="header__col">
+							<div class="header__link header__link_drop">
+								<span>Services</span>
+								<div class="header__menu menu">
+									<div class="menu__wrapper">
+										<div class="menu__inner">
+											<a href="voice-to-text.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/voice-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Voice-to-Text</div>
+													<div class="menu__description">Speak directly, and we’ll instantly convert your voice into written text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="summaries.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/drop-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Summaries</div>
+													<div class="menu__description">Drop an audio or video file, and we’ll turn it into accurate text in no time</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="subtitles.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/video-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Subtitles</div>
+													<div class="menu__description">Paste a video link, and we’ll instantly convert its audio into text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="api.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/setting-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">API</div>
+													<div class="menu__description">Effortlessly connect Verbalink with your favorite tools and platforms.</div>
+												</div>
+											</a><!--/menu__item-->
+										</div>
+									</div>
+								</div><!--/menu-->
+							</div>
+							<a href="#" class="header__link">
+								<span>Pricing</span>
+							</a>
+							<a href="#" class="header__link">
+								<span>Blog</span>
+							</a>
+						</div>
+						<div class="header__col">
+							<div class="header__lang lang">
+								<div class="lang__select">
+									<svg>
+										<use xlink:href="#globe-icon"></use>
+									</svg>
+									<span>English</span>
+								</div>
+								<div class="lang__dropdown">
+									<div class="lang__inner">
+										<div class="lang__option selected">
+											<div class="lang__icon">
+												<img src="assets/images/en-icon.svg" alt="">
+											</div>
+											<span class="lang__name">English</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/spain-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Spanish</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/brazil-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Portuguese</span>
+										</div><!--/lang__option-->
+									</div>
+								</div>
+							</div><!--/lang-->
+							<a href="#" class="header__sign">
+								<span>Sign in</span>
+							</a>
+							<a href="#" class="btn btn_wh">Try for free</a>
+						</div>
+					</nav>
+					<div class="header__burger burger">
+						<span class="burger__item"></span>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<section class="intro intro_transcribe">
+				<div class="container">
+					<div class="intro__icons">
+						<img src="assets/images/country_7.svg" alt="">
+						<img src="assets/images/country_3.svg" alt="">
+					</div>
+					<h1 class="intro__title">Transcribe French</h1>
+					<div class="intro__subtitle">Save time converting your French audio into text with ease. <br> Get fast, accurate transcripts using our French transcription services!</div>
+					<div class="intro__stat stat">
+						<div class="stat__inner">
+							<div class="stat__item">
+								<div class="stat__number">99%</div>
+								<div class="stat__description">Why Choose Verbalink?</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">60+</div>
+								<div class="stat__description">Supported Languages</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">100%</div>
+								<div class="stat__description">Safe&Secure Product</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">60</div>
+								<div class="stat__description">Free Minutes</div>
+							</div>
+						</div>
+					</div><!--/stat-->
+				</div>
+			</section><!--/intro-->
+			<div class="function function_bg">
+				<div class="container">
+					<div class="function__inner">
+						<div class="function__box">
+							<div class="function__content">
+								<div class="function__icon">
+									<img src="assets/images/convert-icon_bl.svg" alt="">
+								</div>
+								<div class="function__title">Upload & Convert</div>
+								<div class="function__description">Drop an audio or video file, and we’ll turn it into accurate text in no time</div>
+								<div class="function__add add">
+									<form action="#" class="add-container">
+										<div class="add-file">
+											<input id="file-input" type="file" name="file" multiple>
+					             				 <label for="file-input">
+					             				 	<img src="assets/images/file-icon_blue.svg" alt="">
+					             				 	<span>Click to upload or drag and drop</span>
+					             				 </label>
+										</div>	
+									</form>
+								</div>
+							</div>
+							<a href="#" class="btn-green">Try for free</a>
+						</div><!--/function__box-->
+						<div class="function__box">
+							<div class="function__content">
+								<div class="function__icon">
+									<img src="assets/images/record-icon_bl.svg" alt="">
+								</div>
+								<div class="function__title">Record & Transform</div>
+								<div class="function__description">Speak directly, and we’ll instantly convert your voice into written text</div>
+								<div class="function__record record">
+									<div class="record__btn">
+										<div class="record__icon"></div>
+										<div class="record__description">Record</div>
+									</div>
+									<div class="record__signal">
+										<img src="assets/images/signal_blue.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn-green">Try for free</a>
+						</div><!--/function__box-->
+						<div class="function__box">
+							<div class="function__content">
+								<div class="function__icon">
+									<img src="assets/images/play-icon_bl.svg" alt="">
+								</div>
+								<div class="function__title">Link & Transcribe</div>
+								<div class="function__description">Paste a video link, and we’ll instantly convert its audio into text</div>
+								<div class="function__link">
+									<div class="function__link-description">Link</div>
+									<div class="function__link-input">
+										<input type="text" value="https://www.youtube.com/watch?v=lS2TUU">
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn-green">Try for free</a>
+						</div><!--/function__box-->
+					</div>
+					</div>
+			</div><!--/function-->
+			<section class="steps section">
+				<div class="container">
+					<h2 class="title">How to transcribe French audio to text?</h2>
+					<div class="steps__subtitle">Upload, Select, Edit, Export — Transform Your Speech to Text Seamlessly with Verbalink!</div>
+					<div class="steps__inner steps__inner_big">
+						<div class="steps__visual"></div>
+						<div class="steps__list">
+							<div class="steps__item active">
+								<div class="steps__info">
+									<div class="steps__number">1</div>
+									<div class="steps__text">
+										<div class="steps__title">Upload Your File</div>
+										<div class="steps__description">Easily import your audio or video from your device, Google Drive, YouTube, or Dropbox.</div>
+									</div>
+								</div>
+								<div class="steps__photo show">
+									<div class="steps__photo-inner">
+										<img src="assets/images/steps_1.png" alt="">
+									</div>
+								</div>
+							</div><!--/steps__item-->
+							<div class="steps__item">
+								<div class="steps__info">
+									<div class="steps__number">2</div>
+									<div class="steps__text">
+										<div class="steps__title">Select "French"</div>
+										<div class="steps__description">Our platform supports over 60 languages, accents, and dialects for precise transcription.</div>
+									</div>
+								</div>
+								<div class="steps__photo">
+									<div class="steps__photo-inner">
+										<img src="assets/images/steps_1.png" alt="">
+									</div>
+								</div>
+							</div><!--/steps__item-->
+							<div class="steps__item">
+								<div class="steps__info">
+									<div class="steps__number">3</div>
+									<div class="steps__text">
+										<div class="steps__title">Click "Transcribe"</div>
+										<div class="steps__description">Our AI-powered transcription software delivers lightning-fast, 99% accurate results.</div>
+									</div>
+								</div>
+								<div class="steps__photo">
+									<div class="steps__photo-inner">
+										<img src="assets/images/steps_1.png" alt="">
+									</div>
+								</div>
+							</div><!--/steps__item-->
+							<div class="steps__item">
+								<div class="steps__info">
+									<div class="steps__number">4</div>
+									<div class="steps__text">
+										<div class="steps__title">Receive Your Transcript</div>
+										<div class="steps__description">Get your French transcript in minutes with AI, or opt for our human service for 100% accuracy within 24 hours.</div>
+									</div>
+								</div>
+								<div class="steps__photo">
+									<div class="steps__photo-inner">
+										<img src="assets/images/steps_1.png" alt="">
+									</div>
+								</div>
+							</div><!--/steps__item-->
+							<div class="steps__item">
+								<div class="steps__info">
+									<div class="steps__number">5</div>
+									<div class="steps__text">
+										<div class="steps__title">Export in Your Preferred Format</div>
+										<div class="steps__description">Download your transcript as TXT, DOCX, PDF, HTML, and more—quick and hassle-free!</div>
+									</div>
+								</div>
+								<div class="steps__photo">
+									<div class="steps__photo-inner">
+										<img src="assets/images/steps_1.png" alt="">
+									</div>
+								</div>
+							</div><!--/steps__item-->
+						</div>
+					</div>
+					<div class="steps__btn">
+						<a href="#" class="btn-green">Transcribe now</a>
+					</div>
+				</div>
+			</section><!--/steps-->
+			<section class="faq section">
+				<div class="container">
+					<h2 class="title">Frequently Asked Questions</h2>
+					<div class="faq__inner">
+						<div class="faq__item">
+							<div class="faq__question">How accurate is your French transcription service?</div>
+							<div class="faq__answer">Automatically create highly accurate subtitles using advanced AI technology. Whether for social media, educational content, or professional videos, our tool ensures your captions are precise and seamlessly integrated.</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">Can I transcribe French audio with different accents and dialects?</div>
+							<div class="faq__answer">Automatically create highly accurate subtitles using advanced AI technology. Whether for social media, educational content, or professional videos, our tool ensures your captions are precise and seamlessly integrated.</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">What file formats are supported for French transcription?</div>
+							<div class="faq__answer">Automatically create highly accurate subtitles using advanced AI technology. Whether for social media, educational content, or professional videos, our tool ensures your captions are precise and seamlessly integrated.</div>
+						</div><!--/faq__item-->
+						<div class="faq__item">
+							<div class="faq__question">How long does it take to transcribe a French audio file?</div>
+							<div class="faq__answer">Automatically create highly accurate subtitles using advanced AI technology. Whether for social media, educational content, or professional videos, our tool ensures your captions are precise and seamlessly integrated.</div>
+						</div><!--/faq__item-->
+					</div>
+				</div>
+			</section><!--/faq-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__col">
+						<a href="#" class="footer__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<div class="footer__description">Verbalink is a fast, accurate, and effortless AI-powered voice-to-text solution for seamless transcription</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Services</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">Voice-to-Text</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Summaries</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Subtitles</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">API Integrations</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Languages</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">English</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">German</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">French</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Spanish</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Indonesian</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Turkish</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Company</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">About us</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Terms of Service</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Help Center</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copyright">© 2025 Verbalink. All rights reserved</div>
+			</div>
+		</footer><!--/footer-->
+	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

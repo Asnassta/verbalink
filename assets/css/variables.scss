@@ -1,0 +1,31 @@
+$ff: 'Inter', sans-serif;
+$ffm: 'Manrope', sans-serif;
+$ffn: 'NunitoSans', sans-serif;
+$wh: #ffffff;
+$bl: rgb(29, 37, 43);
+$bl2: rgb(13, 16, 22);
+$dblue: rgb(26, 33, 46);
+$green: rgb(35, 230, 168);
+$dgreen: rgb(19, 159, 115);
+$gray: rgb(242, 243, 245);
+$gray2: rgb(228, 230, 232);
+$gray3: rgb(64, 76, 84);
+$dgray: rgb(102, 114, 122);
+$lgray: rgb(247, 249, 250);
+$red: rgb(219, 37, 60);
+$purple: rgb(146, 53, 254);
+
+@mixin text {
+	font-family: $ff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $dgray;
+}
+
+$maxWidth: 1920;
+@mixin adaptive-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 430;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 430px) / #{$maxWidth}));
+}

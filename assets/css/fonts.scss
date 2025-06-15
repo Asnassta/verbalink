@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:   url('../fonts/Inter-Regular.woff2') format('woff2'),
+  url('../fonts/Inter-Regular.woff') format('woff'),
+  url('../fonts/Inter-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:   url('../fonts/Inter-Medium.woff2') format('woff2'),
+  url('../fonts/Inter-Medium.woff') format('woff'),
+  url('../fonts/Inter-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:   url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+  url('../fonts/Inter-SemiBold.woff') format('woff'),
+  url('../fonts/Inter-SemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:   url('../fonts/Manrope-Semibold.woff2') format('woff2'),
+  url('../fonts/Manrope-Semibold.woff') format('woff'),
+  url('../fonts/Manrope-Semibold.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:   url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
+  url('../fonts/NunitoSans-Regular.woff') format('woff'),
+  url('../fonts/NunitoSans-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:   url('../fonts/NunitoSans-Bold.woff2') format('woff2'),
+  url('../fonts/NunitoSans-Bold.woff') format('woff'),
+  url('../fonts/NunitoSans-Bold.ttf') format('truetype'),
+}

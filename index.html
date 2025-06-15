@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta content="telephone=no" name="format-detection"/>
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>verbalink</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="globe-icon" viewBox="0 0 24 24">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5192 2 22 6.48083 22 12C22 17.5192 17.5192 22 12 22C6.48083 22 2 17.5192 2 12C2 6.48083 6.48083 2 12 2ZM14.1308 15.3333H9.86833C10.3233 17.3833 11.0692 18.7617 12 20.12C12.995 18.6692 13.7008 17.2783 14.1308 15.3333ZM8.16667 15.3333H4.36083C5.39083 17.6875 7.4475 19.4767 9.99 20.0967C9.11667 18.6525 8.50417 17.0483 8.16667 15.3333ZM19.6392 15.3333H15.8333C15.5075 16.99 14.9208 18.5725 14.0208 20.0783C16.5308 19.4425 18.6183 17.6658 19.6392 15.3333ZM7.96833 10.3333H3.83333C3.61083 11.4275 3.61083 12.5708 3.83333 13.6667H7.92917C7.83 12.5592 7.845 11.44 7.96833 10.3333ZM14.3525 10.3333H9.64667C9.50917 11.4383 9.4925 12.56 9.6025 13.6667H14.3967C14.5075 12.56 14.4892 11.4392 14.3525 10.3333ZM20.1667 10.3333H16.0308C16.1542 11.44 16.1692 12.5592 16.0708 13.6667H20.1667C20.3833 12.5958 20.3942 11.46 20.1667 10.3333ZM10.0367 3.8925C7.4725 4.5025 5.3975 6.2975 4.36083 8.66667H8.23833C8.60083 6.965 9.22 5.34583 10.0367 3.8925ZM11.9992 3.8525C11.0917 5.3275 10.4075 6.73 9.94667 8.66667H14.0525C13.6075 6.795 12.9383 5.37667 11.9992 3.8525ZM13.9725 3.91C14.8167 5.42 15.4167 7.04333 15.7608 8.66667H19.6392C18.6125 6.32 16.5042 4.535 13.9725 3.91Z"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<nav class="header__nav">
+						<div class="header__col">
+							<div class="header__link header__link_drop">
+								<span>Services</span>
+								<div class="header__menu menu">
+									<div class="menu__wrapper">
+										<div class="menu__inner">
+											<a href="voice-to-text.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/voice-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Voice-to-Text</div>
+													<div class="menu__description">Speak directly, and we’ll instantly convert your voice into written text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="summaries.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/drop-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Summaries</div>
+													<div class="menu__description">Drop an audio or video file, and we’ll turn it into accurate text in no time</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="subtitles.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/video-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">Subtitles</div>
+													<div class="menu__description">Paste a video link, and we’ll instantly convert its audio into text</div>
+												</div>
+											</a><!--/menu__item-->
+											<a href="api.html" class="menu__item">
+												<div class="menu__icon">
+													<img src="assets/images/setting-icon.svg" alt="">
+												</div>
+												<div class="menu__info">
+													<div class="menu__title">API</div>
+													<div class="menu__description">Effortlessly connect Verbalink with your favorite tools and platforms.</div>
+												</div>
+											</a><!--/menu__item-->
+										</div>
+									</div>
+								</div><!--/menu-->
+							</div>
+							<a href="pricing.html" class="header__link">
+								<span>Pricing</span>
+							</a>
+							<a href="#" class="header__link">
+								<span>Blog</span>
+							</a>
+						</div>
+						<div class="header__col">
+							<div class="header__lang lang">
+								<div class="lang__select">
+									<svg>
+										<use xlink:href="#globe-icon"></use>
+									</svg>
+									<span>English</span>
+								</div>
+								<div class="lang__dropdown">
+									<div class="lang__inner">
+										<div class="lang__option selected">
+											<div class="lang__icon">
+												<img src="assets/images/en-icon.svg" alt="">
+											</div>
+											<span class="lang__name">English</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/spain-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Spanish</span>
+										</div><!--/lang__option-->
+										<div class="lang__option">
+											<div class="lang__icon">
+												<img src="assets/images/brazil-icon.svg" alt="">
+											</div>
+											<span class="lang__name">Portuguese</span>
+										</div><!--/lang__option-->
+									</div>
+								</div>
+							</div><!--/lang-->
+							<a href="#" class="header__sign">
+								<span>Sign in</span>
+							</a>
+							<a href="#" class="btn btn_wh">Try for free</a>
+						</div>
+					</nav>
+					<div class="header__burger burger">
+						<span class="burger__item"></span>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<section class="intro section">
+				<div class="container">
+					<h1 class="intro__title">Transcribe <span>audio to text.</span><br> Effortless.</h1>
+					<div class="intro__subtitle">AI-powered voice-to-text service that converts audio and video into accurate, editable text in seconds.</div>
+					<div class="intro__function function function_dark">
+						<div class="function__inner">
+							<div class="function__box">
+								<div class="function__content">
+									<div class="function__icon">
+										<img src="assets/images/convert-icon.svg" alt="">
+									</div>
+									<div class="function__title">Upload & Convert</div>
+									<div class="function__description">Drop an audio or video file, and we’ll turn it into accurate text in no time</div>
+									<div class="function__add add">
+										<form action="#" class="add-container">
+											<div class="add-file">
+												<input id="file-input" type="file" name="file" multiple>
+					              				 <label for="file-input">
+					              				 	<img src="assets/images/file-icon.svg" alt="">
+					              				 	<span>Click to upload or drag and drop</span>
+					              				 </label>
+											</div>	
+										</form>
+									</div>
+								</div>
+								<a href="#" class="btn-green">Try for free</a>
+							</div><!--/function__box-->
+							<div class="function__box">
+								<div class="function__content">
+									<div class="function__icon">
+										<img src="assets/images/record-icon.svg" alt="">
+									</div>
+									<div class="function__title">Record & Transform</div>
+									<div class="function__description">Speak directly, and we’ll instantly convert your voice into written text</div>
+									<div class="function__record record">
+										<div class="record__btn">
+											<div class="record__icon"></div>
+											<div class="record__description">Record</div>
+										</div>
+										<div class="record__signal">
+											<img src="assets/images/signal.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<a href="#" class="btn-green">Try for free</a>
+							</div><!--/function__box-->
+							<div class="function__box">
+								<div class="function__content">
+									<div class="function__icon">
+										<img src="assets/images/play-icon.svg" alt="">
+									</div>
+									<div class="function__title">Link & Transcribe</div>
+									<div class="function__description">Paste a video link, and we’ll instantly convert its audio into text</div>
+									<div class="function__link">
+										<div class="function__link-description">Link</div>
+										<div class="function__link-input">
+											<input type="text" value="https://www.youtube.com/watch?v=lS2TUU">
+										</div>
+									</div>
+								</div>
+								<a href="#" class="btn-green">Try for free</a>
+							</div><!--/function__box-->
+						</div>
+					</div><!--/function-->
+					<div class="intro__stat stat">
+						<h2 class="stat__title">Why Choose Verbalink?</h2>
+						<div class="stat__inner">
+							<div class="stat__item">
+								<div class="stat__number">99%</div>
+								<div class="stat__description">Why Choose Verbalink?</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">60+</div>
+								<div class="stat__description">Supported Languages</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">100%</div>
+								<div class="stat__description">Safe&Secure Product</div>
+							</div>
+							<div class="stat__item">
+								<div class="stat__number">60</div>
+								<div class="stat__description">Free Minutes</div>
+							</div>
+						</div>
+					</div><!--/stat-->
+				</div>
+			</section><!--/intro-->
+			<section class="services section">
+				<div class="container">
+					<h2 class="title">Our Services</h2>
+					<div class="tabs-nav">
+						<div class="tabs-nav__inner">
+							<a href="#" onclick="javascript:tabs(1);return false;" class="t1 active">Speech-to-Text </a>
+							<a href="#" onclick="javascript:tabs(2);return false;"  class="t2">Video Subtitles</a>
+							<a href="#" onclick="javascript:tabs(3);return false;"  class="t3">AI Summaries</a>
+							<a href="#" onclick="javascript:tabs(4);return false;"  class="t4">API & Automation</a>
+						</div>
+					</div>
+					<div class="tabs-block tab_1">
+						<div class="services__item">
+							<div class="services__info">
+								<h3 class="services__title">AI-Powered Speech-to-Text Transcription</h3>
+								<div class="services__description">Convert any audio into precise, editable text within seconds. Our AI-driven technology ensures high accuracy and fast results, making transcription effortless for businesses, content creators, and professionals.</div>
+								<a href="#" class="btn">Learn more</a>
+							</div>
+							<div class="services__photo">
+								<img src="assets/images/services_1.svg" alt="">
+							</div>
+						</div><!--/services__item-->
+					</div><!--/tabs-block-->
+					<div class="tabs-block tab_2">
+						<div class="services__item">
+							<div class="services__info">
+								<h3 class="services__title">AI-Powered Speech-to-Text Transcription</h3>
+								<div class="services__description">Convert any audio into precise, editable text within seconds. Our AI-driven technology ensures high accuracy and fast results, making transcription effortless for businesses, content creators, and professionals.</div>
+								<a href="#" class="btn">Learn more</a>
+							</div>
+							<div class="services__photo">
+								<img src="assets/images/services_1.svg" alt="">
+							</div>
+						</div><!--/services__item-->
+					</div><!--/tabs-block-->
+					<div class="tabs-block tab_3">
+						<div class="services__item">
+							<div class="services__info">
+								<h3 class="services__title">AI-Powered Speech-to-Text Transcription</h3>
+								<div class="services__description">Convert any audio into precise, editable text within seconds. Our AI-driven technology ensures high accuracy and fast results, making transcription effortless for businesses, content creators, and professionals.</div>
+								<a href="#" class="btn">Learn more</a>
+							</div>
+							<div class="services__photo">
+								<img src="assets/images/services_1.svg" alt="">
+							</div>
+						</div><!--/services__item-->
+					</div><!--/tabs-block-->
+					<div class="tabs-block tab_4">
+						<div class="services__item">
+							<div class="services__info">
+								<h3 class="services__title">AI-Powered Speech-to-Text Transcription</h3>
+								<div class="services__description">Convert any audio into precise, editable text within seconds. Our AI-driven technology ensures high accuracy and fast results, making transcription effortless for businesses, content creators, and professionals.</div>
+								<a href="#" class="btn">Learn more</a>
+							</div>
+							<div class="services__photo">
+								<img src="assets/images/services_1.svg" alt="">
+							</div>
+						</div><!--/services__item-->
+					</div><!--/tabs-block-->
+				</div>
+			</section><!--/services-->
+			<section class="languages section">
+				<div class="container">
+					<div class="languages__box">
+						<h2 class="title">Supported Languages</h2>
+						<div class="languages__wrapper">
+							<div class="languages__inner">
+								<a href="#" class="languages__item">
+									<div class="languages__name">English</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_1.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_2.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_3.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_4.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+								<a href="#" class="languages__item">
+									<div class="languages__name">German</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_5.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_6.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+								<a href="#" class="languages__item">
+									<div class="languages__name">French</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_7.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_8.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+								<a href="#" class="languages__item">
+									<div class="languages__name">Spanish</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_9.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_10.svg" alt="">
+										</div>
+										<div class="languages__icon">
+											<img src="assets/images/country_11.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+								<a href="#" class="languages__item">
+									<div class="languages__name">Indonesian</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_12.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+								<a href="#" class="languages__item">
+									<div class="languages__name">Turkish</div>
+									<div class="languages__country">
+										<div class="languages__icon">
+											<img src="assets/images/country_13.svg" alt="">
+										</div>
+									</div>
+								</a><!--/languages__item-->
+							</div>
+						</div>
+						<a href="#" class="btn-green">See all languages</a>
+					</div>
+				</div>
+			</section><!--/languages-->
+			<section class="services section">
+				<div class="container">
+					<div class="services__item">
+						<div class="services__info">
+							<h3 class="services__title">Social Media Video Transcription – Convert Any Video to Text</h3>
+							<div class="services__description">Easily transcribe videos from YouTube, TikTok, Instagram, and other platforms by simply pasting a link. Our AI-powered system extracts speech, converts it into accurate text, and provides a ready-to-use transcript in seconds. Perfect for content creators, marketers, and researchers looking to repurpose or analyze video content effortlessly.</div>
+						</div>
+						<div class="services__photo">
+							<img src="assets/images/services_1.svg" alt="">
+						</div>
+					</div><!--/services__item-->
+					<div class="services__item">
+						<div class="services__photo">
+							<img src="assets/images/services_2.svg" alt="">
+						</div>
+						<div class="services__info">
+							<h3 class="services__title">General Media File Transcription – Convert Audio & Video to Text</h3>
+							<div class="services__description">Upload any audio or video file, and our AIpowered system will generate a precise, editable transcript in seconds. Whether it's interviews, podcasts, webinars, or meetings, get accurate text with ease—perfect for professionals, researchers, and content creators.</div>
+						</div>
+					</div><!--/services__item-->
+					<div class="services__item">
+						<div class="services__info">
+							<h3 class="services__title">Live Audio Transcription – Speak and Convert in Real Time</h3>
+							<div class="services__description">Record your voice directly in the browser, and our AI will instantly transcribe it into accurate, editable text. Ideal for meetings, notes, interviews, and hands-free dictation—no uploads needed, just start speaking!</div>
+						</div>
+						<div class="services__photo">
+							<img src="assets/images/services_1.svg" alt="">
+						</div>
+					</div><!--/services__item-->
+					<div class="services__item">
+						<div class="services__photo">
+							<img src="assets/images/services_2.svg" alt="">
+						</div>
+						<div class="services__info">
+							<h3 class="services__title">AI-Powered Content Summarization</h3>
+							<div class="services__description">Upload any audio or video file, and our AIpowered system will generate a precise, editable transcript in seconds. Whether it's interviews, podcasts, webinars, or meetings, get accurate text with ease—perfect for professionals, researchers, and content creators.</div>
+						</div>
+					</div><!--/services__item-->
+					<div class="services__item">
+						<div class="services__info">
+							<h3 class="services__title">Automated Subtitles Generation – Accurate Captions with Timestamps</h3>
+							<div class="services__description">Generate precise subtitles for any video with AIpowered transcription. Supports all major formats (SRT, VTT, TXT) and includes accurate timestamps for seamless syncing. Perfect for content creators, educators, and businesses looking to improve accessibility and engagement.</div>
+						</div>
+						<div class="services__photo">
+							<img src="assets/images/services_1.svg" alt="">
+						</div>
+					</div><!--/services__item-->
+				</div>
+			</section><!--/services-->
+			<section class="reviews section">
+				<div class="container">
+					<h2 class="title title_wh">What are they saying about us?</h2>
+					<div class="reviews__content">
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"Verbalink has reduced the necessity for follow-up calls with clients. Now, we immediately focus on delivering solutions."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_1.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Rebecca Lee</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill reviews__rating-fill_45"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"I'm in Zoom meetings all day, so having Verbalink available, or even stepping in when I can't attend, is a real game-changer."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_2.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Marla Singer</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"I'm truly impressed with how Verbalink assists us in identifying our customers' actual needs."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_3.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Jane Smith</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill reviews__rating-fill_45"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"Verbalink has reduced the necessity for follow-up calls with clients. Now, we immediately focus on delivering solutions."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_1.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Rebecca Lee</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill reviews__rating-fill_45"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"I'm in Zoom meetings all day, so having Verbalink available, or even stepping in when I can't attend, is a real game-changer."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_2.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Marla Singer</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__box">
+										<div class="reviews__text">"I'm truly impressed with how Verbalink assists us in identifying our customers' actual needs."</div>
+										<div class="reviews__row">
+											<div class="reviews__autor">
+												<div class="reviews__autor-photo">
+													<img src="assets/images/reviews_3.png" alt="">
+												</div>
+												<div class="reviews__autor-name">Jane Smith</div>
+											</div>
+											<div class="reviews__rating">
+												<div class="reviews__rating-fill reviews__rating-fill_45"></div>
+											</div>
+										</div>
+									</div><!--reviews__box-->
+								</div><!--/reviews__slide-->
+							</div>
+						</div><!--/reviews__slider-->
+						<div class="slider-arrows">
+							<div class="slider-arrow slider-arrow_prev">
+								<img src="assets/images/slider-arrow.svg" alt="">
+							</div>
+							<div class="slider-arrow slider-arrow_next">
+								<img src="assets/images/slider-arrow.svg" alt="">
+							</div>
+						</div><!--/slider-arrows-->
+					</div>
+				</div>
+			</section><!--/reviews-->
+			<section class="banner section">
+				<div class="container">
+					<div class="banner__box">
+						<div class="banner__inner">
+							<h4 class="title-small title-small_wh">Sign up Now and Start Verbalink with AI</h4>
+							<a href="#" class="btn btn_unborder">Try for free</a>
+						</div>
+					</div>
+				</div>
+			</section><!--/banner-->
+			<section class="blog section">
+				<div class="container">
+					<h2 class="title"> Our Blog</h2>
+					<div class="blog__content">
+						<div class="blog__slider swiper">
+							<div class="blog__wrapper swiper-wrapper">
+								<div class="blog__slide swiper-slide">
+									<div class="blog__box">
+										<div class="blog__block">
+											<div class="blog__photo">
+												<img src="assets/images/blog-photo_1.png" alt="">
+											</div>
+											<h4 class="blog__title">AI-Powered Speech-to-Text Transcription</h4>
+											<div class="blog__description">Generate precise subtitles for any video with AIpowered transcription. Supports all major formats (SRT, VTT, TXT) and includes</div>
+										</div>
+										<a href="#" class="link">Learn More</a>
+									</div><!--/blog__box-->
+								</div><!--/blog__slide-->
+								<div class="blog__slide swiper-slide">
+									<div class="blog__box">
+										<div class="blog__block">
+											<div class="blog__photo">
+												<img src="assets/images/blog-photo_2.png" alt="">
+											</div>
+											<h4 class="blog__title">AI-Powered Speech-to-Text Transcription</h4>
+											<div class="blog__description">Generate precise subtitles for any video with AIpowered transcription. Supports all major formats (SRT, VTT, TXT) and includes </div>
+										</div>
+										<a href="#" class="link">Learn More</a>
+									</div><!--/blog__box-->
+								</div><!--/blog__slide-->
+								<div class="blog__slide swiper-slide">
+									<div class="blog__box">
+										<div class="blog__block">
+											<div class="blog__photo">
+												<img src="assets/images/blog-photo_3.png" alt="">
+											</div>
+											<h4 class="blog__title">AI-Powered Speech-to-Text Transcription</h4>
+											<div class="blog__description">Generate precise subtitles for any video with AIpowered transcription. Supports all major formats (SRT, VTT, TXT) and includes </div>
+										</div>
+										<a href="#" class="link">Learn More</a>
+									</div><!--/blog__box-->
+								</div><!--/blog__slide-->
+							</div>
+						</div><!--/blog__slider-->
+						<div class="slider-arrows">
+							<div class="slider-arrow slider-arrow_prev">
+								<img src="assets/images/slider-arrow_bl.svg" alt="">
+							</div>
+							<div class="slider-arrow slider-arrow_next">
+								<img src="assets/images/slider-arrow_bl.svg" alt="">
+							</div>
+						</div><!--/slider-arrows-->
+					</div>
+				</div>
+			</section><!--/blog--->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__col">
+						<a href="#" class="footer__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<div class="footer__description">Verbalink is a fast, accurate, and effortless AI-powered voice-to-text solution for seamless transcription</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Services</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">Voice-to-Text</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Summaries</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Subtitles</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">API Integrations</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Languages</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">English</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">German</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">French</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Spanish</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Indonesian</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Turkish</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Company</div>
+						<ul class="footer__list">
+							<li>
+								<a href="#" class="footer__link">About us</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Terms of Service</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Help Center</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copyright">© 2025 Verbalink. All rights reserved</div>
+			</div>
+		</footer><!--/footer-->
+	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
